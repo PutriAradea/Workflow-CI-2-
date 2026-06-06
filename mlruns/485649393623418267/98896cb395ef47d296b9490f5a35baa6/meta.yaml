@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/project_python_venv31210/src/Eksperimen_SML_Putri_Aradea/Workflow-CI/mlruns/485649393623418267/98896cb395ef47d296b9490f5a35baa6/artifacts
+end_time: 1780717846305
+entry_point_name: ''
+experiment_id: '485649393623418267'
+lifecycle_stage: active
+run_id: 98896cb395ef47d296b9490f5a35baa6
+run_name: charming-boar-58
+run_uuid: 98896cb395ef47d296b9490f5a35baa6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780717824360
+status: 3
+tags: []
+user_id: ACER
