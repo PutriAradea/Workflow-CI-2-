@@ -14,7 +14,7 @@ from sklearn.metrics import (
 )
 
 #load data
-df = pd.read_csv("MLProject/stroke_preprocessed.csv")
+df = pd.read_csv("stroke_preprocessed.csv")
 
 #fitur dan target
 X = df.drop("stroke", axis=1)
