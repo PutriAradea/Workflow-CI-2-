@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/project_python_venv31210/src/Eksperimen_SML_Putri_Aradea/Workflow-CI/mlruns/485649393623418267/165dd8a438eb453aa2ab6d84c6352d6c/artifacts
+end_time: 1780720280841
+entry_point_name: ''
+experiment_id: '485649393623418267'
+lifecycle_stage: active
+run_id: 165dd8a438eb453aa2ab6d84c6352d6c
+run_name: fearless-carp-576
+run_uuid: 165dd8a438eb453aa2ab6d84c6352d6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780720262241
+status: 3
+tags: []
+user_id: ACER

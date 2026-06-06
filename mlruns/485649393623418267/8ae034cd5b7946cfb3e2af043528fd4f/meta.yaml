@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/project_python_venv31210/src/Eksperimen_SML_Putri_Aradea/Workflow-CI/mlruns/485649393623418267/8ae034cd5b7946cfb3e2af043528fd4f/artifacts
+end_time: 1780720281412
+entry_point_name: ''
+experiment_id: '485649393623418267'
+lifecycle_stage: active
+run_id: 8ae034cd5b7946cfb3e2af043528fd4f
+run_name: salty-sloth-602
+run_uuid: 8ae034cd5b7946cfb3e2af043528fd4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780720280853
+status: 3
+tags: []
+user_id: ACER
