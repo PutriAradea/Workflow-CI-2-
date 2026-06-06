@@ -1,0 +1,19 @@
+digest: b7edf92f
+name: dataset
+profile: '{"num_rows": 4088, "num_elements": 65408}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "age", "required": true},
+  {"type": "long", "name": "hypertension", "required": true}, {"type": "long", "name":
+  "heart_disease", "required": true}, {"type": "double", "name": "avg_glucose_level",
+  "required": true}, {"type": "double", "name": "bmi", "required": true}, {"type":
+  "boolean", "name": "gender_Male", "required": true}, {"type": "boolean", "name":
+  "gender_Other", "required": true}, {"type": "boolean", "name": "ever_married_Yes",
+  "required": true}, {"type": "boolean", "name": "work_type_Never_worked", "required":
+  true}, {"type": "boolean", "name": "work_type_Private", "required": true}, {"type":
+  "boolean", "name": "work_type_Self-employed", "required": true}, {"type": "boolean",
+  "name": "work_type_children", "required": true}, {"type": "boolean", "name": "Residence_type_Urban",
+  "required": true}, {"type": "boolean", "name": "smoking_status_formerly smoked",
+  "required": true}, {"type": "boolean", "name": "smoking_status_never smoked", "required":
+  true}, {"type": "boolean", "name": "smoking_status_smokes", "required": true}]}'
+source: '{"tags": {"mlflow.user": "ACER", "mlflow.source.name": "MLProject\\modelling.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "499a587cecaf525043076c67529680b22fbc6ba7"}}'
+source_type: code

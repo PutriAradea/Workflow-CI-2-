@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/project_python_venv31210/src/Eksperimen_SML_Putri_Aradea/Workflow-CI/mlruns/0/7719a37f23434cf4aa44a8ec0b1ca9a9/artifacts
+end_time: 1780720715780
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7719a37f23434cf4aa44a8ec0b1ca9a9
+run_name: intelligent-rat-766
+run_uuid: 7719a37f23434cf4aa44a8ec0b1ca9a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780720703513
+status: 3
+tags: []
+user_id: ACER

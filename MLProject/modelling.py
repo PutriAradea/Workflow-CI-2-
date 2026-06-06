@@ -1,7 +1,6 @@
 import os
 import joblib
 import pandas as pd
-import mlflow
 import mlflow.sklearn
 import matplotlib.pyplot as plt
 
@@ -13,14 +12,14 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay
 )
 
-# load data
+# Load data
 df = pd.read_csv("stroke_preprocessed.csv")
 
-# fitur dan target
+# Fitur dan target
 X = df.drop("stroke", axis=1)
 y = df["stroke"]
 
-# split data
+# Split data
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
@@ -29,10 +28,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 )
 
-# experiment MLflow
-mlflow.set_experiment("Stroke_Prediction")
-
-# autolog
+# Autolog MLflow
 mlflow.sklearn.autolog()
 
 # Model
@@ -45,33 +41,38 @@ model = LogisticRegression(
 # Training
 model.fit(X_train, y_train)
 
-# Simpan model lokal
+# Simpan model
 os.makedirs("model", exist_ok=True)
 
 model_path = "model/model.pkl"
 
-joblib.dump(model, model_path)
-
-# Simpan model sebagai artifact tambahan
-mlflow.log_artifact(model_path)
+joblib.dump(
+    model,
+    model_path
+)
 
 # Prediksi
 y_pred = model.predict(X_test)
 
 # Evaluasi
-accuracy = accuracy_score(y_test, y_pred)
+accuracy = accuracy_score(
+    y_test,
+    y_pred
+)
 
 print(f"Accuracy: {accuracy:.4f}")
 
 # Classification Report
-report = classification_report(y_test, y_pred)
+report = classification_report(
+    y_test,
+    y_pred
+)
 
-report_path = "classification_report.txt"
-
-with open(report_path, "w") as f:
+with open(
+    "classification_report.txt",
+    "w"
+) as f:
     f.write(report)
-
-mlflow.log_artifact(report_path)
 
 # Confusion Matrix
 ConfusionMatrixDisplay.from_predictions(
@@ -79,12 +80,12 @@ ConfusionMatrixDisplay.from_predictions(
     y_pred
 )
 
-cm_path = "confusion_matrix.png"
+plt.savefig(
+    "confusion_matrix.png",
+    bbox_inches="tight"
+)
 
-plt.savefig(cm_path, bbox_inches="tight")
 plt.close()
-
-mlflow.log_artifact(cm_path)
 
 print("\nClassification Report:")
 print(report)
